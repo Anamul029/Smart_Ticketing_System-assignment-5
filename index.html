@@ -73,7 +73,7 @@
                         <h1 class="mb-5 text-4xl font-bold">End-to-End Travel with <br>P-Paribahan</h1>
                         <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
                             exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <button onclick="clickBuyTicketButton()" class="btn bg-[#1DD100]">Buy Tickets</button>
+                        <button onclick="clickBuyTicketButton()" class="btn bg-[#1DD100]"><a href="#main">Buy Tickets</a></button>
                     </div>
                 </div>
             </div>
@@ -118,7 +118,7 @@
 
     </header>
 
-    <main id="main" class="hidden w-4/5 mx-auto my-10">
+    <main id="main" class=" w-4/5 mx-auto my-10">
         <section>
             <h2 class="text-3xl font-semibold text-center">P.H Paribahan</h2>
             <p class="text-center my-5">Yes, you can run unit tests and view the results directly within the app. The
@@ -217,16 +217,46 @@
 
                 <!-- sitting button part -->
                 <div id="btn" class="grid grid-cols-5 gap-3 border-dashed border-r-2">
-                    <h1>A</h1><button onclick="selectSeatButton('A1')" id="A1" class="btn">A1</button><button onclick="selectSeatButton('A2')" id="A2" class="btn">A2</button><button onclick="selectSeatButton('A3')" id="A3" class="btn">A3</button><button onclick="selectSeatButton('A4')" id="A4" class="btn">A4</button>
-                    <h1>B</h1><button onclick="selectSeatButton('B1')" id="B1" class="btn">B1</button><button onclick="selectSeatButton('B2')" id="B2" class="btn">B2</button><button onclick="selectSeatButton('B3')" id="B3" class="btn">B3</button><button onclick="selectSeatButton('B4')" id="B4" class="btn">B4</button>
-                    <h1>C</h1><button onclick="selectSeatButton('C1')" id="C1" class="btn">C1</button><button onclick="selectSeatButton('C2')" id="C2" class="btn">C2</button><button onclick="selectSeatButton('C3')" id="C3" class="btn">C3</button><button onclick="selectSeatButton('C4')" id="C4" class="btn">C4</button>
-                    <h1>D</h1><button onclick="selectSeatButton('D1')" id="D1" class="btn">D1</button><button onclick="selectSeatButton('D2')" id="D2" class="btn">D2</button><button onclick="selectSeatButton('D3')" id="D3" class="btn">D3</button><button onclick="selectSeatButton('D4')" id="D4" class="btn">D4</button>
-                    <h1>E</h1><button onclick="selectSeatButton('E1')" id="E1" class="btn">E1</button><button onclick="selectSeatButton('E2')" id="E2" class="btn">E2</button><button onclick="selectSeatButton('E3')" id="E3" class="btn">E3</button><button onclick="selectSeatButton('E4')" id="E4" class="btn">E4</button>
-                    <h1>F</h1><button onclick="selectSeatButton('F1')" id="F1" class="btn">F1</button><button onclick="selectSeatButton('F2')" id="F2" class="btn">F2</button><button onclick="selectSeatButton('F3')" id="F3" class="btn">F3</button><button onclick="selectSeatButton('F4')" id="F4" class="btn">F4</button>
-                    <h1>G</h1><button onclick="selectSeatButton('G1')" id="G1" class="btn">G1</button><button onclick="selectSeatButton('G2')" id="G2" class="btn">G2</button><button onclick="selectSeatButton('G3')" id="G3" class="btn">G3</button><button onclick="selectSeatButton('G4')" id="G4" class="btn">G4</button>
-                    <h1>H</h1><button onclick="selectSeatButton('H1')" id="H1" class="btn">H1</button><button onclick="selectSeatButton('H2')" id="H2" class="btn">H2</button><button onclick="selectSeatButton('H3')" id="H3" class="btn">H3</button><button onclick="selectSeatButton('H4')" id="H4" class="btn">H4</button>
-                    <h1>I</h1><button onclick="selectSeatButton('I1')" id="I1" class="btn">I1</button><button onclick="selectSeatButton('I2')" id="I2" class="btn">I2</button><button onclick="selectSeatButton('I3')" id="I3" class="btn">I3</button><button onclick="selectSeatButton('I4')" id="I4" class="btn">I4</button>
-                    <h1>J</h1><button onclick="selectSeatButton('J1')" id="J1" class="btn">J1</button><button onclick="selectSeatButton('J2')" id="J2" class="btn">J2</button><button onclick="selectSeatButton('J3')" id="J3" class="btn">J3</button><button onclick="selectSeatButton('J4')" id="J4" class="btn">J4</button>
+                    <h1>A</h1><button onclick="selectSeatButton('A1')" id="A1" class="btn">A1</button><button
+                        onclick="selectSeatButton('A2')" id="A2" class="btn">A2</button><button
+                        onclick="selectSeatButton('A3')" id="A3" class="btn">A3</button><button
+                        onclick="selectSeatButton('A4')" id="A4" class="btn">A4</button>
+                    <h1>B</h1><button onclick="selectSeatButton('B1')" id="B1" class="btn">B1</button><button
+                        onclick="selectSeatButton('B2')" id="B2" class="btn">B2</button><button
+                        onclick="selectSeatButton('B3')" id="B3" class="btn">B3</button><button
+                        onclick="selectSeatButton('B4')" id="B4" class="btn">B4</button>
+                    <h1>C</h1><button onclick="selectSeatButton('C1')" id="C1" class="btn">C1</button><button
+                        onclick="selectSeatButton('C2')" id="C2" class="btn">C2</button><button
+                        onclick="selectSeatButton('C3')" id="C3" class="btn">C3</button><button
+                        onclick="selectSeatButton('C4')" id="C4" class="btn">C4</button>
+                    <h1>D</h1><button onclick="selectSeatButton('D1')" id="D1" class="btn">D1</button><button
+                        onclick="selectSeatButton('D2')" id="D2" class="btn">D2</button><button
+                        onclick="selectSeatButton('D3')" id="D3" class="btn">D3</button><button
+                        onclick="selectSeatButton('D4')" id="D4" class="btn">D4</button>
+                    <h1>E</h1><button onclick="selectSeatButton('E1')" id="E1" class="btn">E1</button><button
+                        onclick="selectSeatButton('E2')" id="E2" class="btn">E2</button><button
+                        onclick="selectSeatButton('E3')" id="E3" class="btn">E3</button><button
+                        onclick="selectSeatButton('E4')" id="E4" class="btn">E4</button>
+                    <h1>F</h1><button onclick="selectSeatButton('F1')" id="F1" class="btn">F1</button><button
+                        onclick="selectSeatButton('F2')" id="F2" class="btn">F2</button><button
+                        onclick="selectSeatButton('F3')" id="F3" class="btn">F3</button><button
+                        onclick="selectSeatButton('F4')" id="F4" class="btn">F4</button>
+                    <h1>G</h1><button onclick="selectSeatButton('G1')" id="G1" class="btn">G1</button><button
+                        onclick="selectSeatButton('G2')" id="G2" class="btn">G2</button><button
+                        onclick="selectSeatButton('G3')" id="G3" class="btn">G3</button><button
+                        onclick="selectSeatButton('G4')" id="G4" class="btn">G4</button>
+                    <h1>H</h1><button onclick="selectSeatButton('H1')" id="H1" class="btn">H1</button><button
+                        onclick="selectSeatButton('H2')" id="H2" class="btn">H2</button><button
+                        onclick="selectSeatButton('H3')" id="H3" class="btn">H3</button><button
+                        onclick="selectSeatButton('H4')" id="H4" class="btn">H4</button>
+                    <h1>I</h1><button onclick="selectSeatButton('I1')" id="I1" class="btn">I1</button><button
+                        onclick="selectSeatButton('I2')" id="I2" class="btn">I2</button><button
+                        onclick="selectSeatButton('I3')" id="I3" class="btn">I3</button><button
+                        onclick="selectSeatButton('I4')" id="I4" class="btn">I4</button>
+                    <h1>J</h1><button onclick="selectSeatButton('J1')" id="J1" class="btn">J1</button><button
+                        onclick="selectSeatButton('J2')" id="J2" class="btn">J2</button><button
+                        onclick="selectSeatButton('J3')" id="J3" class="btn">J3</button><button
+                        onclick="selectSeatButton('J4')" id="J4" class="btn">J4</button>
                 </div>
             </div>
             <!-- part 1 end -->
@@ -235,7 +265,8 @@
                 <h2 class="font-semibold my-5 p-5 border-b-2 border-dashed">Select your seat</h2>
                 <div class="flex justify-between border-dashed p-1 border-b-2">
                     <div>
-                        <h2>Seat <span id="total-selected-sit" class="bg-[#1DD100] px-2 rounded-lg text-white">0</span></h2>
+                        <h2>Seat <span id="total-selected-sit" class="bg-[#1DD100] px-2 rounded-lg text-white">0</span>
+                        </h2>
                     </div>
                     <div>
                         <h2>Class</h2>
@@ -275,7 +306,7 @@
                 <!-- total price end -->
                 <!-- total discound price -->
                 <div id="discoundDiv" class="flex hidden justify-between my-2">
-                    <h1 id= class="font-semibold">Total discount</h1>
+                    <h1 id=class="font-semibold">Total discount</h1>
                     <h1 id="total-cost" class="font-semibold">BDT <span id="totalDiscountCost">0</span></h1>
                 </div>
 
@@ -310,16 +341,18 @@
                         <input type="text" class="grow" placeholder="Enter your email id" />
                     </label><br>
 
-                    <button id="NextBtn" onclick="unhideElementById('endpart')" disabled class="btn w-full my-3 text-white bg-[#1DD100]">Next</button>
+                    <button id="NextBtn" onclick="unhideElementById('endpart')" disabled
+                        class="btn w-full my-3 text-white bg-[#1DD100]">Next</button>
 
                 </div>
 
             </div>
             <!-- part 2 end -->
         </section>
+        
 
         <!-- ending section -->
-        <section id="endpart" class="hidden absolute relative bottom-96">
+        <section id="endpart" class="hidden relative bottom-96">
             <div class="flex flex-col justify-center items-center  bottom-200">
                 <div class="card md:w-1/2 bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
@@ -330,7 +363,7 @@
                       <p class="font-semibold">Thank you for Booking Our Bus Seats. 
                         We are working hard to find the best service and deals for you.</p>
                       <div class="card-actions">
-                        <button onclick="unhideElementById('header')"  class="btn bg-green-500">Continue</button>
+                        <button class="btn bg-green-500"><a href="#header">Continue</a></button>
                       </div>
                     </div>
                   </div>
@@ -356,7 +389,7 @@
 
     </footer> -->
 
-     <script src="javascript/functions.js"></script>
+    <script src="javascript/functions.js"></script>
     <script src="javascript/ticket.js"></script>
 
 </body>

@@ -1,9 +1,9 @@
 // go to main page
-function clickBuyTicketButton() {
-    hideElementById('header');
-    unhideElementById('main');
-    unhideElementById('footer');
-}
+// function clickBuyTicketButton() {
+//     // hideElementById('header');
+//     // unhideElementById('main');
+//     // unhideElementById('footer');
+// }
 
 // select ticket
 
