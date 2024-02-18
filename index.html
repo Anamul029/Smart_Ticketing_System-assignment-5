@@ -70,7 +70,7 @@
                 <div class="hero-overlay bg-opacity-60"></div>
                 <div class="hero-content text-center text-neutral-content">
                     <div class="max-w-md">
-                        <h1 class="mb-5 text-4xl font-bold">End-to-End Travel with <br>P-Paribahan</h1>
+                        <h1 class="mb-5 text-4xl font-bold">End-to-End Travel with <br> <span class="text-[#1DD100]">P-Paribahan</span></h1>
                         <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
                             exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                         <button onclick="clickBuyTicketButton()" class="btn bg-[#1DD100]"><a href="#main">Buy Tickets</a></button>
@@ -89,6 +89,7 @@
                         <h6 class="text-xl font-semibold">On your next purchase</h6>
                         <p>Use by January,2024</p>
                     </div>
+                    <img src="images/cupon-devider.png" alt="">
                     <div>
                         <h2 class="text-2xl font-semibold">NEW15</h2>
                         <p>coupon code</p>
@@ -101,6 +102,7 @@
                         <h6 class="text-xl font-semibold">On your next purchase</h6>
                         <p>Use by January,2024</p>
                     </div>
+                    <img src="images/cupon-devider.png" alt="">
                     <div>
                         <h2 class="text-2xl font-semibold">Couple 20</h2>
                         <p>coupon code</p>
@@ -118,8 +120,8 @@
 
     </header>
 
-    <main id="main" class=" w-4/5 mx-auto my-10">
-        <section>
+    <main id="main" class=" w-4/5 mx-auto my-10 border-t-2 border-green-700 rounded-3xl">
+        <section class="mt-8">
             <h2 class="text-3xl font-semibold text-center">P.H Paribahan</h2>
             <p class="text-center my-5">Yes, you can run unit tests and view the results directly within the app. The
                 integrated testing features
@@ -135,7 +137,7 @@
                                 </button>
                             </div>
                             <div class="flex-1">
-                                <a class="btn btn-ghost text-xl">Greenline Paribahan</a>
+                                <a class="btn btn-ghost -ml-2 md:text-xl">Greenline Paribahan</a>
 
                                 <!-- <p><br>Coach-009-WEB ! AC_Business</p> -->
                             </div>
@@ -343,7 +345,12 @@
 
                     <button id="NextBtn" onclick="unhideElementById('endpart')" disabled
                         class="btn w-full my-3 text-white bg-[#1DD100]">Next</button>
-
+                        <div class="flex justify-between my-8">
+                            <p><u>terms and condition</u></p>
+                            <p><u>return policy</u></p>
+    
+                        </div>
+                        
                 </div>
 
             </div>
