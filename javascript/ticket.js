@@ -48,15 +48,10 @@ function selectSeatButton(id) {
             }  
     })
     
-   
-
-
 }
 
 
-
-
-
+// click next button to go next page
 
 // const element = document.getElementById('total-selected-sit');
 // const elementInt=parseInt(element.innerText)
