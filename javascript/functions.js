@@ -35,14 +35,20 @@ function totalSeatBooking(id){
         id.classList.remove('hidden');
         // when total ticket == 1 then total cost
         const totalPrice=document.getElementById('totalCost');
-        totalPrice.innerText=550
+        totalPrice.innerText=550;
+        // grand total part
+        const grandTotal=document.getElementById('grand-total')
+        grandTotal.innerText=550;
     }
     if(total===2){
         const id=document.getElementById('SelectedTicketAndGetPrice2');
         id.classList.remove('hidden');
          // when total ticket == 2 then total cost
          const totalPrice=document.getElementById('totalCost');
-         totalPrice.innerText=1100
+         totalPrice.innerText=1100;
+         // grand total part
+         const grandTotal=document.getElementById('grand-total')
+         grandTotal.innerText=1100;
     }
     if(total===3){
         const id=document.getElementById('SelectedTicketAndGetPrice3');
@@ -50,13 +56,54 @@ function totalSeatBooking(id){
          // when total ticket == 3 then total cost
          const totalPrice=document.getElementById('totalCost');
          totalPrice.innerText=1650
+         // grand total part
+         const grandTotal=document.getElementById('grand-total')
+         grandTotal.innerText=1650;
+         
     }
     if(total===4){
         const id=document.getElementById('SelectedTicketAndGetPrice4');
         id.classList.remove('hidden');
          // when total ticket == 4 then total cost
          const totalPrice=document.getElementById('totalCost');
-         totalPrice.innerText=2200
+         totalPrice.innerText=2200;
+         
+        //  enable the submit button
+        const btnn=document.getElementById('submit');
+        // total discount tk
+        const totalDiscount=document.getElementById('totalDiscountCost');
+        // manage discount div
+        const discoundDiv=document.getElementById('discoundDiv');
+        btnn.removeAttribute('disabled');
+         // grand total part
+         const grandTotal=document.getElementById('grand-total');
+         grandTotal.innerText=2200;
+
+        //  discount part
+        document.getElementById('coupon').addEventListener('keyup',function(event){
+            if(event.target.value==='NEW15'){
+                btnn.addEventListener('click',function(){
+                    grandTotal.innerText=2200-330;
+                    discoundDiv.classList.remove('hidden');
+                    totalDiscount.innerText=330;
+                    // coupon input hide
+                    CouponHide();
+                    // const couponInput=document.getElementById('couponInput');
+                    // couponInput.classList.add('hidden');
+                })
+                
+               
+            }
+            else if(event.target.value==='Couple 20'){
+                grandTotal.innerText=2200-440;
+                discoundDiv.classList.remove('hidden');
+                totalDiscount.innerText=440;
+                CouponHide();
+            }
+        })
+       
+        // if(couponDiscount==='NEW15'){}
+        //  grandTotal.innerText=2200+discountPrice;
     }
     
 }
@@ -94,3 +141,10 @@ function disableBtn(id) {
 // function getElement(id){
 //     document.getElementById(id);
 // }
+
+// function coupon input hide
+function CouponHide(){
+    const couponInput=document.getElementById('couponInput');
+     couponInput.classList.add('hidden');
+    
+}

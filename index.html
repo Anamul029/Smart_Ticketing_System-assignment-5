@@ -268,23 +268,28 @@
                 <!-- selected ticket end part -->
                 <hr>
                 <!-- total price -->
-                <div class="flex justify-between">
+                <div class="flex justify-between my-2">
                     <h1 id="total-price" class="font-semibold">Total price</h1>
                     <h1 id="total-cost" class="font-semibold">BDT <span id="totalCost">0</span></h1>
                 </div>
                 <!-- total price end -->
+                <!-- total discound price -->
+                <div id="discoundDiv" class="flex hidden justify-between my-2">
+                    <h1 id= class="font-semibold">Total discount</h1>
+                    <h1 id="total-cost" class="font-semibold">BDT <span id="totalDiscountCost">0</span></h1>
+                </div>
 
                 <!-- coupon input start -->
                 <div>
-                    <label class="input input-bordered flex items-center gap-2">
-                        <input type="text" class="grow" placeholder="Have any coupon?" />
-                        <button disabled class="btn bg-[#1DD100]">submit</button>
+                    <label id="couponInput" class="input input-bordered flex items-center gap-2">
+                        <input type="text" id="coupon" class="grow" placeholder="Have any coupon?" />
+                        <button disabled id="submit" class="btn bg-[#1DD100]">submit</button>
                     </label>
                 </div>
                 <!-- coupon input end -->
                 <div class="flex justify-between my-3">
                     <h1 class="font-semibold">Grand total</h1>
-                    <h1 class="font-semibold">BDT <span>0</span></h1>
+                    <h1 class="font-semibold">BDT <span id="grand-total">0</span></h1>
                 </div>
 
                 <!-- input field -->
@@ -297,7 +302,7 @@
                     <h1 class="text-2xl">Mobile Number:</h1>
                     <label class="input input-bordered flex items-center gap-2">
 
-                        <input type="text" class="grow" placeholder="Enter your number" />
+                        <input id="Mobile" type="number" class="grow" placeholder="Enter your number" />
                     </label><br>
 
                     <h1 class="text-2xl">Email ID:</h1><br>
@@ -305,13 +310,15 @@
                         <input type="text" class="grow" placeholder="Enter your email id" />
                     </label><br>
 
-                    <button id="NextBtn" class="btn w-full my-3 text-white bg-[#1DD100]">Next</button>
+                    <button id="NextBtn" disabled class="btn w-full my-3 text-white bg-[#1DD100]">Next</button>
 
                 </div>
 
             </div>
             <!-- part 2 end -->
         </section>
+
+        <!-- ending section -->
     </main>
     <footer id="footer" class="mt-10 hidden">
         <footer class="footer p-10 bg-neutral text-neutral-content">
