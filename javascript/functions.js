@@ -95,11 +95,15 @@ function totalSeatBooking(id){
                
             }
             else if(event.target.value==='Couple 20'){
-                grandTotal.innerText=2200-440;
-                discoundDiv.classList.remove('hidden');
-                totalDiscount.innerText=440;
-                CouponHide();
+                btnn.addEventListener('click',function(){
+                    grandTotal.innerText=2200-440;
+                    discoundDiv.classList.remove('hidden');
+                    totalDiscount.innerText=440;
+                    CouponHide();
+                })
+               
             }
+            
         })
        
         // if(couponDiscount==='NEW15'){}
